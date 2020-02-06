@@ -1,0 +1,24 @@
+{
+	"name": "p2p-web-video",
+	"version": "0.1.0",
+	"description":"Learn from https://www.youtube.com/watch?v=ieBtXwHvoNk&t=195s",
+	"main": "index.js",
+	"scripts":{
+		"start": "budo index.js:bundle.js"
+	},
+	"author": "YuWei Liu <liuyuwei.tarek@gmail.com>",
+	"devDependencies":{
+		"budo": "^4.1.0"
+	},
+	"dependencies": {
+		"simple-peer": "^5.11.4"
+	},
+	"permissions": {
+        "audio-capture": {
+            "description": "Required to capture audio using getUserMedia()"
+        },
+        "video-capture": {
+            "description": "Required to capture video using getUserMedia()"
+        }
+    }
+}
